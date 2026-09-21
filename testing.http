@@ -1,0 +1,55 @@
+### Reading Students Data
+GET http://localhost:4004/odata/v4/student-api/StudentSet
+
+### Creating record in Students Table
+POST http://localhost:4004/odata/v4/student-api/StudentSet
+Content-Type: application/json
+
+{
+      "name": "Jennifer Lopez",
+      "address": "New York City",
+      "email": "JLO@example.com",
+      "mobile": "+1123456789",
+      "age": 50,
+      "gender": "Female"
+}
+
+###Updating record in Students Table
+PATCH http://localhost:4004/odata/v4/student-api/StudentSet('b8ef70a4-cae7-4347-acdc-481d773c32bf')
+Content-Type: application/json
+
+{
+      "email": "jennifer.lopez@JLO.com"
+}
+
+
+###Deleting record in Students Table
+DELETE http://localhost:4004/odata/v4/student-api/StudentSet('6a250e5a-9316-4183-86a9-5fce961e03f2')
+
+
+
+### Reading Courses Data
+GET http://localhost:4004/odata/v4/course-api/CourseSet
+
+### Creating record in Courses Table
+POST http://localhost:4004/odata/v4/course-api/CourseSet
+Content-Type: application/json
+
+{
+      "name": "Jennifer Lopez",
+      "cost": 12.50,
+      "trainer": "Avinash",
+      "duration": 2
+}
+
+###Updating record in Courses Table
+PATCH http://localhost:4004/odata/v4/course-api/CourseSet('b8ef70a4-cae7-4347-acdc-481d773c32bf')
+Content-Type: application/json
+
+{
+      "email": "jennifer.lopez@JLO.com"
+}
+
+
+###Deleting record in Students Table
+DELETE http://localhost:4004/odata/v4/course-api/CourseSet('6a250e5a-9316-4183-86a9-5fce961e03f2')

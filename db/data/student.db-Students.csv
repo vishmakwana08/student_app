@@ -1,0 +1,5 @@
+studentID,name,address,email,mobile,age,gender
+6a250e5a-9316-4183-86a9-5fce961e03f2,Aarav Sharma,123 Main St Mumbai,aarav.sharma@example.com,+918440199685,22,Male
+fd9546f9-2f96-43e7-9267-21a740a86700,Ananya Verma,456 Park Ave Delhi,ananya.verma@example.com,+919501816691,21,Female
+203955c1-548f-4fb5-9c15-a10b7fc1852a,Rahul Gupta,789 Lake Rd Bangalore,rahul.gupta@example.com,+918413668701,23,Male
+caeea1e8-73e3-4782-ad23-439bc2107efd,Priya Patel,101 Link Rd Hyderabad,priya.patel@example.com,+917396884409,21,Female
