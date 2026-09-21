@@ -20,3 +20,10 @@ entity Courses:  cuid, managed {
         trainer  : String;
         duration : Integer;
 }
+
+entity Enrollments : cuid, managed {
+    student  : Association to Students;
+    course   : Association to Courses;
+    status   : String(20);
+    progress : Integer;
+}
