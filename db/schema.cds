@@ -22,8 +22,8 @@ entity Courses:  cuid, managed {
 }
 
 entity Enrollments : cuid, managed {
-    student  : Association to Students;
-    course   : Association to Courses;
+    student  : String(50);
+    course   : String(50);
     status   : String(20);
     progress : Integer;
 }
