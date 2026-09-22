@@ -7,3 +7,7 @@ service StudentAPIService {
 service CourseAPIService {
     entity CourseSet as projection on model.Courses;
 }
+
+service AuthorAPIService {
+    entity AuthorSet as projection on model.Authors;
+}

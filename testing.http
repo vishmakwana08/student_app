@@ -53,3 +53,24 @@ Content-Type: application/json
 
 ###Deleting record in Students Table
 DELETE http://localhost:4004/odata/v4/course-api/CourseSet('6a250e5a-9316-4183-86a9-5fce961e03f2')
+
+
+### Composition examples
+POST http://localhost:4004/odata/v4/author-api/AuthorSet
+Content-Type: application/json
+
+{
+      "name": "John Doe",
+      "books": [
+            {
+                  "name": "SAP Learning BTP",
+                  "title": "BTP Book",
+                  "publishedDate": "10-10-2020"
+            },
+            {
+                  "name": "Java Learning",
+                  "title": "Hello World",
+                  "publishedDate": "10-10-2000"
+            }
+      ]
+}

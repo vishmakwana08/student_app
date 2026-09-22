@@ -1,6 +1,9 @@
 namespace student.db;
 
-using { cuid, managed } from '@sap/cds/common';
+using {
+    cuid,
+    managed
+} from '@sap/cds/common';
 
 entity Students {
     key studentID : UUID;
@@ -13,12 +16,12 @@ entity Students {
 }
 
 
-entity Courses:  cuid, managed {
+entity Courses : cuid, managed {
     // key courseID : UUID;
-        name     : String(50);
-        cost     : Decimal(10, 2);
-        trainer  : String;
-        duration : Integer;
+    name     : String(50);
+    cost     : Decimal(10, 2);
+    trainer  : String;
+    duration : Integer;
 }
 
 entity Enrollments : cuid, managed {
@@ -26,4 +29,16 @@ entity Enrollments : cuid, managed {
     course   : String(50);
     status   : String(20);
     progress : Integer;
+}
+
+entity Books : cuid {
+    name          : String;
+    title         : String;
+    publishedDate : String;
+    author: Association to Authors; //Managed association
+}
+
+entity Authors : cuid {
+    name : String;
+    books: Composition of many Books on books.author = $self;
 }
